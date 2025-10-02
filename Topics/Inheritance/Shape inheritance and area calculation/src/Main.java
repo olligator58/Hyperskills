@@ -1,17 +1,43 @@
 import java.util.Scanner;
 
-// Define the base class Shape
+class Shape {
+    private String name;
 
-// Define the derived class Rectangle
+    public Shape(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+
+class Rectangle extends Shape {
+    private int length;
+    private int width;
+
+    public Rectangle(String name, int length, int width) {
+        super(name);
+        this.length = length;
+        this.width = width;
+    }
+
+    public double calcArea() {
+        return length * width;
+    }
+}
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Read the rectangle's name, length, and width from the user
+        String name = scanner.nextLine();
+        int length = scanner.nextInt();
+        int width = scanner.nextInt();
 
-        // Create an instance of the Rectangle class
-
-        // Print the rectangle's name and area
+        Rectangle rectangle = new Rectangle(name, length, width);
+        System.out.println(rectangle.getName());
+        System.out.println(rectangle.calcArea());
+        scanner.close();
     }
 }
