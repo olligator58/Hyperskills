@@ -7,3 +7,4 @@ gradle*
 *.yaml
 out/
 *.class
+!gradle.properties
