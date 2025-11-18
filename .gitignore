@@ -2,7 +2,8 @@
 /target/
 .idea/
 *.iml
-*gradle*
+gradle*
+.gradle
 *.yaml
 out/
 *.class
