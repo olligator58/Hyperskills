@@ -1,0 +1,17 @@
+<div class="step-text">
+<p>You're crafting a playful language game in which a magical mirror reveals words that reflect perfectly <em>— </em>forward and backward, and this code unlocks the secret behind the mirror’s magic!</p><pre><code class="language-java">class WhimsicalGame {
+
+    public String isMagicalMirror(String input) {
+        String reversed = "";
+        for (int i = input.length() - 1; i &gt;= 0; i--) {
+            reversed += input.charAt(i);
+        }
+
+        if (input.equals(reversed)) {
+            return input + " is a palindrome";
+        } else {
+            return input + " is not a palindrome";
+        }
+    }
+}</code></pre><p>Explain the purpose of this code to an AI assistant by focusing on what it does overall and the outcome it achieves, rather than going through each line. Highlight the main function and the rules it uses to complete its task.</p><p></p><div class="alert alert-primary">The AI assistant will generate new code based on your description, focusing on the same functionality as the original but with a different implementation. The generated code won’t be an exact replica but should achieve the same outcome.</div><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>
+</div>
