@@ -1,0 +1,12 @@
+<div class="step-text">
+<p>Consider the following snippet of Java code:</p><pre><code class="java">
+try {
+    ExecutorService executor = Executors.newFixedThreadPool(10);
+    List&lt;Callable&lt;Integer&gt;&gt; callables = new ArrayList&lt;&gt;();
+    // Assume Exception throwing Tasks are added to the callables
+    // ___(1)___
+} catch(InterruptedException | ExecutionException e) {
+    System.out.println("Exception occurred!");
+}
+</code></pre><p>Fill the blank (represented as ___(1)___), to execute all the callables - implicitly handling exceptions in the callables - and to retrieve the results when all tasks have finished execution. Select the statements that best fit the blank.</p>
+</div>
