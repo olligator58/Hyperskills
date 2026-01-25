@@ -1,0 +1,10 @@
+<div class="step-text">
+<p></p>
+<p>What will be the output of the program below?</p>
+<pre><code class="java">ExecutorService executorService = Executors.newSingleThreadExecutor();
+Runnable runnable = () -&gt; {
+    int returnResult = 5;
+};
+
+System.out.println(executorService.submit(runnable).get());</code></pre>
+</div>

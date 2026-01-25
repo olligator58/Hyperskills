@@ -1,0 +1,9 @@
+<div class="step-text">
+<p></p><p>Select the possible values of the <code class="language-java">result</code> variable after executing the following code:</p><pre><code class="language-java">ExecutorService executorService = Executors.newSingleThreadExecutor();
+List&lt;Callable&lt;String&gt;&gt; callableList = new ArrayList&lt;&gt;();
+callableList.add(() -&gt; "Java is the best");
+callableList.add(() -&gt; "Java is the very best");
+callableList.add(() -&gt; "Java is an island");
+
+String result = executorService.invokeAny(callableList);</code></pre>
+</div>
