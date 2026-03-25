@@ -1,4 +1,4 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicLong;
 
 class BankAccount {
@@ -25,6 +25,7 @@ class BankAccount {
     }
 }
 
+/*
 class Testus {
     public static void main(String[] args) throws InterruptedException {
         Scanner scanner = new Scanner(System.in);
@@ -51,4 +52,4 @@ class Testus {
         System.out.printf("Итоговый баланс счета: %d%n", account.getBalance());
         scanner.close();
     }
-}
+}*/
