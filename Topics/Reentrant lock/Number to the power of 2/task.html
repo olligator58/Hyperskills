@@ -1,0 +1,6 @@
+<div class="step-text">
+<p></p>
+<p>We can employ a lock reacquisition strategy to perform certain computations. Let's consider the task of identifying the smallest perfect square (a number raised to the power of 2) that is equal to or greater than a specific number. To do this, we can sequentially acquire a lock and, with each acquisition, multiply the initial number by 2. We continue this process until we reach a predetermined threshold. The total count of acquired locks can be determined using the <code class="java">getHoldCount()</code> function, which will answer our question.</p>
+<p>Here's your task: find the smallest perfect square (a number raised to the power of 2) that is equal to or larger than a given number.</p>
+<p>To add a level of complexity, imagine we have three threads. Two of these threads act as registrars, reading and recording your current value. The third thread is tasked with performing the calculation.</p><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">10</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">4</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>
+</div>

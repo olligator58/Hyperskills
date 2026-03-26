@@ -1,0 +1,10 @@
+<div class="step-text">
+<p></p>
+<p>Implement a thread-safe cache that utilizes a <code class="java">ReentrantReadWriteLock</code> to manage access. The cache should support the following operations:</p>
+<ul>
+<li><code class="java">add()</code>: Increment the cache value by 1.</li>
+<li><code class="java">get()</code>: Return the current value of the cache.</li>
+</ul>
+<p>The cache should employ a <code class="java">ReentrantReadWriteLock</code> to ensure thread safety for these operations. The <code class="java">add</code> operation should acquire the write lock before modifying the cache, while the <code class="java">get</code> operation should acquire the read lock before accessing the cache.</p>
+<p>The input to the program is the number of times the <code class="java">add</code> operation is performed. The output should be the final cache value., which should be equal to the count of <code class="java">add</code> operations performed.</p><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">8</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">24</code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 5 seconds</font><br><br>
+</div>
